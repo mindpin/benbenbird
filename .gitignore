@@ -1,0 +1,57 @@
+*.rbc
+*.sassc
+.sass-cache
+capybara-*.html
+.rspec
+.rvmrc
+/.bundle
+/vendor/bundle
+/public/system/*
+/coverage/
+/spec/tmp/*
+**.orig
+rerun.txt
+pickle-email-*.html
+.project
+config/initializers/secret_token.rb
+config/initializers/r.rb
+
+public/static_files/*
+public/uploads/*
+public/file_part_upload/*
+public/assets/
+
+*~
+\#*
+.\#*
+.DS_*
+._*
+
+# Ignore application configuration
+/config/application.yml
+.floo
+.flooignore
+
+backup
+
+selenium/
+
+# rvm
+.ruby-gemset
+
+/.bundle
+
+# Ignore the default SQLite database.
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore Byebug command history file.
+.byebug_history
+
+/node_modules
