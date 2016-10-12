@@ -22,12 +22,17 @@ module.exports = Header = React.createClass
             onClick={@handleClick}
             mode="horizontal"
             >
-            <Menu.Item key="header-0">
-              <a href="javascript:;">首页</a>
-            </Menu.Item>
-            <Menu.Item key="header-1">
-              <a href="javascript:;">测试</a>
-            </Menu.Item>
+            {
+              for menu, index in @props.content_component.menus
+                <Menu.Item key="header-#{index}">
+                  <a href={menu.url || "javascript:;"} >
+                    <FaIcon type={menu.icon} />
+                    <span>
+                      {menu.content}
+                    </span>
+                  </a>
+                </Menu.Item>
+            }
           </Menu>
         </Col>
       </Row>

@@ -1,0 +1,10 @@
+menus:
+  - icon:     "home"
+    content:  "主页"
+    url:      "/"
+  - icon:     "phone"
+    content:  "测试1"
+    url:      "/1"
+  - icon:     "plus"
+    content:  "测试2"
+    url:      "/2"
