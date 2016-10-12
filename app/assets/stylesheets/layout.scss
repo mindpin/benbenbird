@@ -13,3 +13,18 @@
 #logo{
   line-height: 48px;
 }
+.footer{
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 40px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #767676;
+  border-top: 1px solid #eee;
+
+  text-align: center;
+  a{
+    margin-left: 10px;
+  }
+}

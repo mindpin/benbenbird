@@ -15,6 +15,7 @@ window.AppLayout = require 'react/layouts/AppLayout'
 
 # basic
 window.Header = require 'react/basic/Header'
+window.Footer = require 'react/basic/Footer'
 
 # components
 window.IndexPage = require 'app/page/Index'

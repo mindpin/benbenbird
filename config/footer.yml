@@ -1,0 +1,10 @@
+footer:
+  links:
+    - content:  "关于我们"
+      url:      "/"
+    - content:  "教学理念"
+      url:      "/"
+    - content:  "联系方式"
+      url:      "/"
+    - content:  "成员简介"
+      url:      "/"
