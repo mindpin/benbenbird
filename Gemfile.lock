@@ -6,7 +6,7 @@ GIT
     mina_util (0.1.0)
 
 GEM
-  remote: https://rubygems.org/
+  remote: https://gems.ruby-china.org/
   specs:
     actioncable (5.0.0.1)
       actionpack (= 5.0.0.1)
