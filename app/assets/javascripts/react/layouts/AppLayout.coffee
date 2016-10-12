@@ -1,7 +1,7 @@
 module.exports = AppLayout = React.createClass
   render: ->
     style = {
-      padding: 20
+      #padding: 20
     }
 
     <div className='app-layout' style={style}>
