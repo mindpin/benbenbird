@@ -91,4 +91,31 @@
     float: right;
     left: 10px;
   }
+
+  .text-wrapper-bottom{
+    text-align: center;
+    margin: 10% auto 40px;
+    h2{
+      font-size: 32px;
+      color: #666;
+      font-weight: 400;
+    }
+    p{
+      margin: 20px auto;
+      font-size: 16px;
+      line-height: 28px;
+      color: #999;
+    }
+    button{
+      i{
+        margin-left: .5em;
+      }
+    }
+  }
+
+  .image-wrapper-bottom{
+    background: url(http://i.teamkn.com/i/wcuduOf6.png) no-repeat 50%/615px;
+    height: 364px;
+    margin: auto;
+  }
 }

@@ -72,80 +72,80 @@ Content = React.createClass
       </div>
 
       <div className="page" id="page-6">
-        <div className="image-wrapper image-wrapper-even">
-        </div>
-        <div className="text-wrapper text-wrapper-even">
+        <div className="text-wrapper-bottom">
           <h2>截图</h2>
-          <p>描述</p>
+          <p>这是一些描述</p>
           <Button type="primary" onClick={@handleButtonClick("/1")}>
             课程目录
             <FaIcon type="angle-right" />
           </Button>
+        </div>
+        <div className="image-wrapper-bottom">
         </div>
       </div>
 
       <div className="page" id="page-7">
-        <div className="image-wrapper image-wrapper-odd">
-        </div>
-        <div className="text-wrapper text-wrapper-odd">
+        <div className="text-wrapper-bottom">
           <h2>线上思维导图</h2>
-          <p>描述</p>
-          <Button type="primary" onClick={@handleButtonClick} data-url="/1">
+          <p>这是一些描述</p>
+          <Button type="primary" onClick={@handleButtonClick("/1")}>
             课程目录
             <FaIcon type="angle-right" />
           </Button>
+        </div>
+        <div className="image-wrapper-bottom">
         </div>
       </div>
 
       <div className="page" id="page-8">
-        <div className="image-wrapper image-wrapper-even">
-        </div>
-        <div className="text-wrapper text-wrapper-even">
+        <div className="text-wrapper-bottom">
           <h2>手机聊天客户端</h2>
-          <p>描述</p>
+          <p>这是一些描述</p>
           <Button type="primary" onClick={@handleButtonClick("/1")}>
             课程目录
             <FaIcon type="angle-right" />
           </Button>
+        </div>
+        <div className="image-wrapper-bottom">
         </div>
       </div>
 
       <div className="page" id="page-9">
-        <div className="image-wrapper image-wrapper-odd">
-        </div>
-        <div className="text-wrapper text-wrapper-odd">
+        <div className="text-wrapper-bottom">
           <h2>流程编辑器</h2>
-          <p>描述</p>
-          <Button type="primary" onClick={@handleButtonClick} data-url="/1">
-            课程目录
-            <FaIcon type="angle-right" />
-          </Button>
-        </div>
-      </div>
-
-      <div className="page" id="page-10">
-        <div className="image-wrapper image-wrapper-even">
-        </div>
-        <div className="text-wrapper text-wrapper-even">
-          <h2>js-warrior</h2>
-          <p>描述</p>
+          <p>这是一些描述</p>
           <Button type="primary" onClick={@handleButtonClick("/1")}>
             课程目录
             <FaIcon type="angle-right" />
           </Button>
         </div>
+        <div className="image-wrapper-bottom">
+        </div>
       </div>
 
-      <div className="page" id="page-11">
-        <div className="image-wrapper image-wrapper-odd">
-        </div>
-        <div className="text-wrapper text-wrapper-odd">
-          <h2>flappy bird</h2>
-          <p>描述</p>
-          <Button type="primary" onClick={@handleButtonClick} data-url="/1">
+      <div className="page" id="page-10">
+        <div className="text-wrapper-bottom">
+          <h2>js-warrior</h2>
+          <p>这是一些描述</p>
+          <Button type="primary" onClick={@handleButtonClick("/1")}>
             课程目录
             <FaIcon type="angle-right" />
           </Button>
+        </div>
+        <div className="image-wrapper-bottom">
+        </div>
+      </div>
+
+      <div className="page" id="page-11">
+        <div className="text-wrapper-bottom">
+          <h2>flappy bird</h2>
+          <p>这是一些描述</p>
+          <Button type="primary" onClick={@handleButtonClick("/1")}>
+            课程目录
+            <FaIcon type="angle-right" />
+          </Button>
+        </div>
+        <div className="image-wrapper-bottom">
         </div>
       </div>
     </div>
