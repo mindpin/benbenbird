@@ -15,7 +15,7 @@ Content = React.createClass
     <div className="pages">
       <div className="page" id="page-1">
         <div className="text-wrapper">
-          <h2>笨笨鸟协会</h2>
+          <h2>笨笨鸟学院</h2>
         </div>
       </div>
 

@@ -12,28 +12,27 @@ module.exports = Header = React.createClass
     <div className='header clearfix'>
       <Row type="flex" justify="center">
         <Col xs={24} sm={7} md={6} lg={4}>
-          <a href="/" id="logo">
-            笨笨鸟
+          <a href="/">
+            <h1 id="site-name">笨笨鸟学院</h1>
           </a>
         </Col>
         <Col xs={0} sm={17} md={18} lg={20}>
-          <Menu
-            defaultSelectedKeys={[@state.current]}
-            onClick={@handleClick}
-            mode="horizontal"
-            >
-            {
-              for menu, index in @props.content_component.menus
-                <Menu.Item key="header-#{index}">
-                  <a href={menu.url || "javascript:;"} >
-                    <FaIcon type={menu.icon} />
-                    <span>
+          <div id="nav">
+            <Menu
+              defaultSelectedKeys={[@state.current]}
+              onClick={@handleClick}
+              mode="horizontal"
+              >
+              {
+                for menu, index in @props.content_component.menus
+                  <Menu.Item key="header-#{index}">
+                    <a href={menu.url || "javascript:;"} >
                       {menu.content}
-                    </span>
-                  </a>
-                </Menu.Item>
-            }
-          </Menu>
+                    </a>
+                  </Menu.Item>
+              }
+            </Menu>
+          </div>
         </Col>
       </Row>
     </div>
