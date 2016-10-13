@@ -1,22 +1,22 @@
 { Menu, Row, Col } = antd
 
-module.exports = IntroPage = React.createClass
+module.exports = AboutPage = React.createClass
   getInitialState: ->
     current: @props.current || 'rails'
 
   getDefaultProps: ->
     classes:
-      rails: "Rails Web 开发"
-      wechat_app: "微信小程序开发"
-      react_jquery: "React JS & jQuery 前端开发"
-      react_native: "React Native 移动应用开发"
+      us: "关于我们"
+      teaching_philosophy: "教学理念"
+      contact: "联系方式"
+      members: "成员简介"
 
   handleClick: (e)->
     @setState
       current: e.key
 
   render: ->
-    <div className='page-intro main-wrapper'>
+    <div className='page-about main-wrapper'>
       <Row>
         <Col xs={24} sm={24} md={6} lg={4}>
           <div className="menus">
@@ -45,25 +45,24 @@ module.exports = IntroPage = React.createClass
 
 Content = React.createClass
   render: ->
-    console.log @props
     <div className="content">
       {
         switch @props.page
-          when "wechat_app"
+          when "teaching_philosophy"
             <div>
-              <h1>微信小程序</h1>
+              <h1>教学理念</h1>
             </div>
-          when "react_jquery"
+          when "contact"
             <div>
-              <h1>React JS & jQuery 前端开发</h1>
+              <h1>联系方式</h1>
             </div>
-          when "react_native"
+          when "members"
             <div>
-              <h1>React Native 移动应用开发</h1>
+              <h1>成员简介</h1>
             </div>
           else
             <div>
-              <h1>Rails Web 开发</h1>
+              <h1>关于我们</h1>
             </div>
       }
     </div>

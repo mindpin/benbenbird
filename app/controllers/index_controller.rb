@@ -12,4 +12,11 @@ class IndexController < ApplicationController
       current: params[:current] || 'rails',
     }
   end
+
+  def about
+    @component_name = 'AboutPage'
+    @component_data = {
+      current: params[:current] || 'us',
+    }
+  end
 end
