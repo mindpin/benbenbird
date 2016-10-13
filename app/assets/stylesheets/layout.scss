@@ -1,7 +1,4 @@
-body{
-  background-color: #ECECEC;
-}
-.header, .footer, .main-wrapper{
+.header, .footer{
   background-color: #FFF;
 }
 .app-layout{
@@ -28,7 +25,6 @@ body{
   position: relative;
   padding-top: 20px;
   padding-bottom: 40px;
-  margin-top: 20px;
   font-size: 12px;
   line-height: 1.5;
   color: #767676;
@@ -41,10 +37,18 @@ body{
 }
 
 .main-wrapper{
-  border-radius: 6px;
+  background-color: #ECECEC;
   min-height: 500px;
-  margin: 20px 40px 0 40px;
-  padding-top: 20px;
+  padding: 10px 0;
+
+  .wrapper{
+    background-color: #FFF;
+    border-radius: 6px;
+    min-height: 500px;
+    margin: 20px 40px;
+    padding-top: 20px;
+  }
+
   .menus{
     .ant-menu-item{
       font-size: 14px;
@@ -52,11 +56,9 @@ body{
       overflow: hidden;
     }
   }
+
   .content{
     padding: 0 6% 120px 4%;
-    /*margin-left: -1px;*/
-    /*min-height: 500px;*/
-    /*border-left: 1px solid #e9e9e9;*/
     color: #666;
     font-size: 14px;
     line-height: 1.8;

@@ -16,31 +16,33 @@ module.exports = AboutPage = React.createClass
       current: e.key
 
   render: ->
-    <div className='page-about main-wrapper'>
-      <Row>
-        <Col xs={24} sm={24} md={6} lg={4}>
-          <div className="menus">
-            <Menu
-              defaultSelectedKeys={[@state.current]}
-              onClick={@handleClick}
-              mode="inline"
-              >
-              {
-                for key, content of @props.classes
-                  <Menu.Item key={key}>
-                    <a href="javascript:;" >
-                      {content}
-                    </a>
-                  </Menu.Item>
-              }
-            </Menu>
-          </div>
-        </Col>
+    <div className="main-wrapper">
+      <div className='page-about wrapper'>
+        <Row>
+          <Col xs={24} sm={24} md={6} lg={4}>
+            <div className="menus">
+              <Menu
+                defaultSelectedKeys={[@state.current]}
+                onClick={@handleClick}
+                mode="inline"
+                >
+                {
+                  for key, content of @props.classes
+                    <Menu.Item key={key}>
+                      <a href="javascript:;" >
+                        {content}
+                      </a>
+                    </Menu.Item>
+                }
+              </Menu>
+            </div>
+          </Col>
 
-        <Col xs={24} sm={24} md={18} lg={20}>
-          <Content page={@state.current} />
-        </Col>
-      </Row>
+          <Col xs={24} sm={24} md={18} lg={20}>
+            <Content page={@state.current} />
+          </Col>
+        </Row>
+      </div>
     </div>
 
 Content = React.createClass
