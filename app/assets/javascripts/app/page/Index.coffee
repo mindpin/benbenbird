@@ -25,7 +25,7 @@ Content = React.createClass
         <div className="text-wrapper text-wrapper-even">
           <h2>Rails Web开发</h2>
           <p>描述</p>
-          <Button type="primary" onClick={@handleButtonClick("/1")}>
+          <Button type="primary" onClick={@handleButtonClick("/intro?current=rails")}>
             课程目录
             <FaIcon type="angle-right" />
           </Button>
@@ -38,7 +38,7 @@ Content = React.createClass
         <div className="text-wrapper text-wrapper-odd">
           <h2>微信小程序开发</h2>
           <p>描述</p>
-          <Button type="primary" onClick={@handleButtonClick} data-url="/1">
+          <Button type="primary" onClick={@handleButtonClick("/intro?current=wechat_app")}>
             课程目录
             <FaIcon type="angle-right" />
           </Button>
@@ -51,7 +51,7 @@ Content = React.createClass
         <div className="text-wrapper text-wrapper-even">
           <h2>React JS & jQuery前端开发</h2>
           <p>描述</p>
-          <Button type="primary" onClick={@handleButtonClick("/1")}>
+          <Button type="primary" onClick={@handleButtonClick("/intro?current=react_jquery")}>
             课程目录
             <FaIcon type="angle-right" />
           </Button>
@@ -64,7 +64,7 @@ Content = React.createClass
         <div className="text-wrapper text-wrapper-odd">
           <h2>React Native移动应用开发</h2>
           <p>描述</p>
-          <Button type="primary" onClick={@handleButtonClick} data-url="/1">
+          <Button type="primary" onClick={@handleButtonClick("/intro?current=react_native")}>
             课程目录
             <FaIcon type="angle-right" />
           </Button>
@@ -75,7 +75,7 @@ Content = React.createClass
         <div className="text-wrapper-bottom">
           <h2>截图</h2>
           <p>这是一些描述</p>
-          <Button type="primary" onClick={@handleButtonClick("/1")}>
+          <Button type="primary" onClick={@handleButtonClick("#")}>
             课程目录
             <FaIcon type="angle-right" />
           </Button>
@@ -88,7 +88,7 @@ Content = React.createClass
         <div className="text-wrapper-bottom">
           <h2>线上思维导图</h2>
           <p>这是一些描述</p>
-          <Button type="primary" onClick={@handleButtonClick("/1")}>
+          <Button type="primary" onClick={@handleButtonClick("#")}>
             课程目录
             <FaIcon type="angle-right" />
           </Button>
@@ -101,7 +101,7 @@ Content = React.createClass
         <div className="text-wrapper-bottom">
           <h2>手机聊天客户端</h2>
           <p>这是一些描述</p>
-          <Button type="primary" onClick={@handleButtonClick("/1")}>
+          <Button type="primary" onClick={@handleButtonClick("#")}>
             课程目录
             <FaIcon type="angle-right" />
           </Button>
@@ -114,7 +114,7 @@ Content = React.createClass
         <div className="text-wrapper-bottom">
           <h2>流程编辑器</h2>
           <p>这是一些描述</p>
-          <Button type="primary" onClick={@handleButtonClick("/1")}>
+          <Button type="primary" onClick={@handleButtonClick("#")}>
             课程目录
             <FaIcon type="angle-right" />
           </Button>
@@ -127,7 +127,7 @@ Content = React.createClass
         <div className="text-wrapper-bottom">
           <h2>js-warrior</h2>
           <p>这是一些描述</p>
-          <Button type="primary" onClick={@handleButtonClick("/1")}>
+          <Button type="primary" onClick={@handleButtonClick("#")}>
             课程目录
             <FaIcon type="angle-right" />
           </Button>
@@ -140,7 +140,7 @@ Content = React.createClass
         <div className="text-wrapper-bottom">
           <h2>flappy bird</h2>
           <p>这是一些描述</p>
-          <Button type="primary" onClick={@handleButtonClick("/1")}>
+          <Button type="primary" onClick={@handleButtonClick("#")}>
             课程目录
             <FaIcon type="angle-right" />
           </Button>

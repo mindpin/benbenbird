@@ -1,12 +1,18 @@
 { Alert, Menu, Row, Col } = antd
 
 module.exports = Header = React.createClass
-  getInitialState: ->
-    current: 'header-0'
-
   handleClick: (e)->
     @setState
       current: e.key
+
+  get_header_index: ->
+    path = window.location.pathname
+    for menu, index in @props.content_component.menus
+      return index if path == menu.url
+    0
+
+  getInitialState: ->
+    current: "header-#{@get_header_index()}"
 
   render: ->
     <div className='header clearfix'>
