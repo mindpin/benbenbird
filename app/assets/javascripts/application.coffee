@@ -19,6 +19,7 @@ window.Footer = require 'react/basic/Footer'
 
 # components
 window.IndexPage = require 'app/page/Index'
+window.IntroPage = require 'app/page/Intro'
 #window.OrganizationsTreesPage = require 'app/OrganizationsTreesPage'
 #window.OrganizationTreePage = require 'app/OrganizationTreePage'
 #window.OrganizationNodeShow = require 'app/OrganizationNodeShow'

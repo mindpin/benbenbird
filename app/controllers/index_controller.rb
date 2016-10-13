@@ -5,5 +5,11 @@ class IndexController < ApplicationController
       #tree_roots: roots
     }
   end
-end
 
+  def intro
+    @component_name = 'IntroPage'
+    @component_data = {
+      current: params[:current] || 'rails',
+    }
+  end
+end

@@ -1,3 +1,15 @@
+body{
+  background-color: #ECECEC;
+}
+.header, .footer, .main-wrapper{
+  background-color: #FFF;
+}
+.app-layout{
+  min-height: 500px;
+}
+.main-wrapper{
+  border-radius: 6px;
+}
 #nav {
   float: right;
   border: 0;
@@ -17,9 +29,9 @@
 }
 .footer{
   position: relative;
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 40px;
-  margin-top: 40px;
+  margin-top: 20px;
   font-size: 12px;
   line-height: 1.5;
   color: #767676;
