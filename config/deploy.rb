@@ -18,7 +18,8 @@ set :shared_paths, [
   'config/secrets.yml',
   'config/application.yml',
   'tmp',
-  'log'
+  'log',
+  'node_modules'
 ]
 
 task :environment do
