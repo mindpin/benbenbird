@@ -1,4 +1,4 @@
-{ Button } = antd
+{ Button, Row, Col } = antd
 
 module.exports = IndexPage = React.createClass
   render: ->
@@ -75,13 +75,31 @@ Content = React.createClass
         <div className="text-wrapper-bottom">
           <h2>截图</h2>
           <p>这是一些描述</p>
-          <Button type="primary" onClick={@handleButtonClick("#")}>
-            课程目录
-            <FaIcon type="angle-right" />
-          </Button>
+          <p>这是一些描述</p>
+          <p>这是一些描述</p>
         </div>
-        <div className="image-wrapper-bottom">
-        </div>
+        <Row type="flex" justify="space-around" align="middle">
+          <Col span={4}>
+            <a href="javascript:;">
+              <img src="http://placekitten.com/g/200/200" />
+            </a>
+          </Col>
+          <Col span={4}>
+            <a href="javascript:;">
+              <img src="http://placekitten.com/g/200/200" />
+            </a>
+          </Col>
+          <Col span={4}>
+            <a href="javascript:;">
+              <img src="http://placekitten.com/g/200/200" />
+            </a>
+          </Col>
+          <Col span={4}>
+            <a href="javascript:;">
+              <img src="http://placekitten.com/g/200/200" />
+            </a>
+          </Col>
+        </Row>
       </div>
 
       <div className="page" id="page-7">
