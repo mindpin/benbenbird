@@ -10,7 +10,7 @@ set :deploy_to, '/web/benbenbird'
 set :current_path, 'current'
 set :repository, 'https://github.com/mindpin/benbenbird.git'
 set :branch, 'master'
-set :user, 'master'
+set :user, 'root'
 set :term_mode, nil
 
 set :shared_paths, [
