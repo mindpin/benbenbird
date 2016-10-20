@@ -1,3 +1,7 @@
+# 修复猎豹没有Object.assignBUG
+delete Object.assign
+window.Object.assign = require('object.assign/polyfill')()
+
 # utils
 window.ClassName = require 'utils/ClassName'
 window.randstr = require 'utils/randstr'
