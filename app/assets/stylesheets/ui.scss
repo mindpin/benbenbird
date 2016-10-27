@@ -1,0 +1,322 @@
+$content-width: 1200px;
+
+.app-layout {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #F5F5F5;
+
+  font-family: '微软雅黑';
+  color: #333;
+}
+
+.app-layout .header {
+  $lh: 50px;
+  background-color: #FFF;
+
+  padding: 1rem 1.5rem;
+  line-height: $lh;
+
+  .header-inner {
+    margin:0 auto;
+    max-width: $content-width;
+    overflow: hidden;
+    padding: 0 1.5rem;
+
+    .home {
+      float: left;
+      h1 {
+        height: 50px;
+        width: 190px;
+        background: url(http://i.teamkn.com/i/kA7gv1bl.png) no-repeat center center;
+        background-size: cover;
+        overflow: hidden;
+        line-height: 999;
+        opacity: 0.8;
+      }
+    }
+
+    .nav {
+      float: right;
+      .ant-menu {
+        line-height: $lh;
+      }
+    }
+  }
+}
+
+
+.footer{
+  display: none;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #767676;
+  border-top: 1px solid #eee;
+
+  text-align: center;
+  a{
+    margin-left: 10px;
+  }
+}
+
+
+.app-layout .page-index {
+  min-height: 500px;
+
+  .welcome {
+    $i1: 'http://i.teamkn.com/i/tbH5OtwW.jpg';
+    $i2: 'http://i.teamkn.com/i/YnIljXpF.jpg';
+    $i3: 'http://i.teamkn.com/i/DwemOv1u.jpg';
+    $i4: 'http://i.teamkn.com/i/pLMTtEc5.jpg';
+    margin-bottom: 2rem;
+
+    .i1 {
+      background: url($i1) no-repeat center center;
+    }
+
+    .i2 {
+      background: url($i2) no-repeat center center;
+    }
+
+    .i3 {
+      background: url($i3) no-repeat center center;
+    }
+
+    .i4 {
+      background: url($i4) no-repeat center center;
+    }
+
+    .i1, .i2, .i3, .i4 {
+      background-color: #999;
+      background-size: cover;
+      height: 28rem;
+      .inner {
+        max-width: $content-width;
+        margin: 0 auto;
+        color: white;
+        padding: 4rem 1.5rem;
+        text-shadow: 0 0 10px black;
+        h2 {
+          font-size: 50px;
+          font-family: Monaco,'Courier New', monospace, consolas;
+          margin-bottom: 2rem;
+        }
+        .desc {
+          margin-bottom: 2rem;
+          font-size: 30px;
+          margin-left: 1.5rem;
+          opacity: 0.9;
+          font-family: Monaco,'Courier New', monospace, consolas;
+        }
+        .desc span {
+          font-family: '微软雅黑';
+        }
+
+        button {
+          margin-left: 1.5rem;
+          font-size: 24px;
+        }
+      }
+    }
+
+    li button:before {font-size: 30px;}
+  }
+
+  .works {
+    padding-bottom: 2rem;
+
+    .inner {
+      max-width: $content-width;
+      margin: 0 auto;
+      padding: 0 1rem;
+      overflow: hidden;
+
+      .h2 {
+        margin-left: 0.5rem;
+        margin-bottom: 1rem;
+        border-left: solid 3px rgba(#2DB7F5, 0.5);
+        padding-left: 1rem;
+        h2 {
+          font-weight: normal;
+          font-size: 24px;
+          margin-bottom: 1rem;
+        }
+      }
+
+      .work {
+        width: percentage(1/4);
+        float: left;
+        padding: 0.5rem;
+        .wi {
+          height: 10rem;
+          background-color: rgba(black, 0.5);
+          position: relative;
+
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: cover;
+
+          .c, .ct{
+            position: absolute;
+            top:0;left:0;right:0;bottom:0;
+          }
+          .c {
+            opacity: 0.5;
+          }
+          .ct {
+            padding: 1.5rem;
+            color: white;
+            // text-shadow: 0 0 1px black;
+            a {
+              display: inline-block;
+              border: solid 2px white;
+              padding: 0 1rem;
+              font-size: 16px;
+              line-height: 24px;
+              color: white;
+              border-radius: 5px;
+              background-color: #FFF;
+              color: rgba(black, 0.8);
+            }
+            h3 {
+              font-weight: normal;
+              font-size: 20px;
+              background-color: rgba(black, 0.5);
+              margin:0 -1.5rem;
+              padding: 0.5rem 1.5rem;
+              margin-bottom: 0.5rem;
+              margin-top: -1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// .page-index {
+//   background-color: #FFF;
+//   overflow-x: hidden;
+//   .pages{
+//     background: transparent;
+//     width: auto;
+//     margin: 0;
+//     border-radius: 0;
+//     padding: 0;
+//     overflow: unset;
+//     display: inline;
+//     min-height: 600px;
+//   }
+//   .page{
+//     min-height: 700px;
+//   }
+//   #page-1{
+//     background: url("http://i.teamkn.com/i/gOaMf1av.jpg") no-repeat 50%/cover;
+//     .text-wrapper{
+//       margin: 0;
+//       padding: 20px;
+//       background-color: rgba(0,0,0,0.6);
+//       position: absolute;
+//       left: 15%;
+//       top: 33%;
+//       color: #fff;
+//       text-align: right;
+//       font-family: Lato,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif;
+
+//       h2{
+//         font-size: 40px;
+//         font-weight: 400;
+//         font-family: Raleway,Hiragino Sans GB;
+//         color: #FFF;
+//       }
+//     }
+//   }
+
+//   .image-wrapper{
+//     width: 65%;
+//     position: relative;
+//     top: 10%;
+//     /*margin-top: -256px;*/
+//     margin-top: 10%;
+//   }
+
+//   .text-wrapper{
+//     width: 35%;
+//     position: relative;
+//     font-family: Lato,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif;
+//     top: 20%;
+//     margin-top: 20%;
+//     h2{
+//       font-size: 32px;
+//       color: #666;
+//       font-weight: 400;
+//     }
+//     p{
+//       margin: 10px 0 20px;
+//       font-size: 16px;
+//       line-height: 28px;
+//       color: #999;
+//     }
+//     button{
+//       i{
+//         margin-left: .5em;
+//       }
+//     }
+//   }
+
+//   .image-wrapper-odd{
+//     float: right;
+//     background: url(https://t.alipayobjects.com/images/T1r5RkXotXXXXXXXXX.png) no-repeat 0/800px;
+//     height: 474px;
+//     top: 50%;
+//     /*margin-top: -266px;*/
+//   }
+
+//   .image-wrapper-even{
+//     float: left;
+//     background: url(https://t.alipayobjects.com/images/T1Ch8kXfpdXXXXXXXX.png) no-repeat 100%/841px;
+//     height: 511px;
+//   }
+
+//   .text-wrapper-odd{
+//     float: left;
+//     left: 10px;
+//     padding-left: 10%;
+//   }
+
+//   .text-wrapper-even{
+//     float: right;
+//     left: 10px;
+//   }
+
+//   .text-wrapper-bottom{
+//     text-align: center;
+//     margin: 10% auto 40px;
+//     h2{
+//       font-size: 32px;
+//       color: #666;
+//       font-weight: 400;
+//     }
+//     p{
+//       margin: 20px auto;
+//       font-size: 16px;
+//       line-height: 28px;
+//       color: #999;
+//     }
+//     button{
+//       i{
+//         margin-left: .5em;
+//       }
+//     }
+//   }
+
+//   .image-wrapper-bottom{
+//     background: url(http://i.teamkn.com/i/wcuduOf6.png) no-repeat 50%/615px;
+//     height: 364px;
+//     margin: auto;
+//   }
+// }
