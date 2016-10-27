@@ -2,7 +2,7 @@
  *= require boilerplate/normalize 
  *= require boilerplate/main
  *
- *= require antd/antd-2.0.0.min
+ *= require antd/antd-2.1.0.min
  *
  *= require_tree .
  *= require_self

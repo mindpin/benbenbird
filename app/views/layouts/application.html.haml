@@ -7,14 +7,12 @@
     %meta{name: 'renderer', content: 'webkit'}
     %meta{name: 'action-cable-url', content: '/cable'}
 
-    %title 笨笨鸟
-
-    = stylesheet_link_tag 'application', media: 'all', :'data-turbolinks-track' => true
-
-    = javascript_include_tag 'libs', :'data-turbolinks-track' => true
-    = javascript_include_tag 'application', :'data-turbolinks-track' => true
+    %title 笨笨鸟学院
 
     = csrf_meta_tags
+
+    = stylesheet_link_tag :application, :'data-turbolinks-track' => :reload
+    = javascript_include_tag :application, :'data-turbolinks-track' => :reload
 
   %body
     :ruby
@@ -23,6 +21,9 @@
         data: @component_data || {}
       }
 
+    :javascript
+      window.content_component = #{content_component.to_json}
+
     = react_component 'Header', content_component: menus_component
-    = react_component 'AppLayout', content_component: content_component
+    = react_component 'AppLayout'
     = react_component 'Footer', links: footer_component
