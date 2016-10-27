@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get "/about" => 'index#about', as: :about
-  get "/intro" => 'index#intro', as: :intro
   root to: 'index#index'
+  get '/packages' => 'index#packages', as: :packages
+  get '/plans' => 'index#plans', as: :plans
+  get '/about' => 'index#about', as: :about
 end

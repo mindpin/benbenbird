@@ -24,6 +24,5 @@
     :javascript
       window.content_component = #{content_component.to_json}
 
-    = react_component 'Header', content_component: menus_component
-    = react_component 'AppLayout'
+    = react_component 'AppLayout', menus: menus_component
     = react_component 'Footer', links: footer_component

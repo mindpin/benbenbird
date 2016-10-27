@@ -1,44 +1,53 @@
-{ Alert, Menu, Row, Col } = antd
+{ Alert, Menu, Row, Col, Icon } = antd
 
 module.exports = Header = React.createClass
-  handleClick: (e)->
-    @setState
-      current: e.key
+  render: ->
+    <div className='header'>
+      <div className='header-inner'>
+        <Home />
+        <Nav {...@props} />
+      </div>
+    </div>
 
-  get_header_index: ->
-    path = window.location.pathname
-    for menu, index in @props.content_component.menus
-      return index if path == menu.url
-    0
+Home = React.createClass
+  render: ->
+    <div className='home'>
+      <a href="/">
+        <h1><Icon type='home' /> 笨笨鸟学院</h1>
+      </a>
+    </div>
 
+Nav = React.createClass
   getInitialState: ->
-    current: "header-#{@get_header_index()}"
+    path = new URI(location.href).path()
+    current_path: path
 
   render: ->
-    <div className='header clearfix'>
-      <Row type="flex" justify="center">
-        <Col xs={24} sm={7} md={6} lg={4}>
-          <a href="/">
-            <h1 id="site-name">笨笨鸟学院</h1>
-          </a>
-        </Col>
-        <Col xs={0} sm={17} md={18} lg={20}>
-          <div id="nav">
-            <Menu
-              defaultSelectedKeys={[@state.current]}
-              onClick={@handleClick}
-              mode="horizontal"
-              >
-              {
-                for menu, index in @props.content_component.menus
-                  <Menu.Item key="header-#{index}">
-                    <a href={menu.url || "javascript:;"} >
-                      {menu.content}
-                    </a>
-                  </Menu.Item>
-              }
-            </Menu>
-          </div>
-        </Col>
-      </Row>
+    <div className='nav'>
+      <Menu
+        defaultSelectedKeys={[@state.current_path]}
+        mode="horizontal"
+      >
+      {
+        @props.menus.map (menu)->
+          <Menu.Item key={menu.path}>
+            <MenuLink menu={menu}>{menu.content}</MenuLink>
+          </Menu.Item>
+      }
+      </Menu>
     </div>
+
+MenuLink = React.createClass
+  render: ->
+    { path, icon } = @props.menu
+
+    <a href={path} onClick={@click}>
+      <span className='nav-text'>
+        <Icon type={icon} /> {@props.children}
+      </span>
+    </a>
+
+  click: (evt)->
+    evt.preventDefault()
+    evt.stopPropagation()
+    Turbolinks.visit @props.menu.path

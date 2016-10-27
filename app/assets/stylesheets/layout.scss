@@ -1,6 +1,38 @@
-.header, .footer{
-  background-color: #FFF;
+.header {
+  $lh: 50px;
+
+  padding: 1rem 1.5rem;
+  border-bottom: solid 1px #ddd;
+  line-height: $lh;
+
+  .header-inner {
+    margin:0 auto;
+    max-width: 1200px;
+    overflow: hidden;
+
+    .home {
+      float: left;
+      h1 {
+        height: 50px;
+        width: 190px;
+        background: url(http://i.teamkn.com/i/kA7gv1bl.png) no-repeat center center;
+        background-size: cover;
+        overflow: hidden;
+        line-height: 999;
+        opacity: 0.8;
+      }
+    }
+
+    .nav {
+      float: right;
+      .ant-menu {
+        line-height: $lh;
+      }
+    }
+  }
 }
+
+
 .app-layout{
   min-height: 500px;
 }

@@ -13,7 +13,6 @@ register = (component, displayName=null)->
   window.AppComponents[component.displayName] = component
 
 # basic
-window.Header = require 'react/basic/Header'
 window.Footer = require 'react/basic/Footer'
 
 # components

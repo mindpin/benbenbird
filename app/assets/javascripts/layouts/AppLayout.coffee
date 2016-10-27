@@ -1,9 +1,10 @@
+Header = require 'react/basic/Header'
+
 module.exports = AppLayout = React.createClass
   render: ->
-    style = {
-      padding: 20
-    }
+    console.log @props
 
-    <div className='app-layout' style={style}>
+    <div className='app-layout'>
+      <Header menus={@props.menus} />
       <YieldComponent component={window.content_component} />
     </div>

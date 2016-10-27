@@ -6,7 +6,7 @@ class IndexController < ApplicationController
     }
   end
 
-  def intro
+  def packages
     @component_name = 'IntroPage'
     @component_data = {
       current: params[:current] || 'rails',

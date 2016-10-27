@@ -1,10 +1,15 @@
-menus:
-  - icon:     "home"
-    content:  "主页"
-    url:      "/"
-  - icon:     "phone"
-    content:  "课程简介"
-    url:      "/intro"
-  - icon:     "plus"
-    content:  "关于我们"
-    url:      "/about"
+- icon:     "home"
+  content:  "主页"
+  path:     "/"
+
+- icon:     "code-o"
+  content:  "课程包"
+  path:     "/packages"
+
+- icon:     "solution"
+  content:  "专项计划"
+  path:     "/plans"
+
+- icon:     "info-circle-o"
+  content:  "关于我们"
+  path:     "/about"
