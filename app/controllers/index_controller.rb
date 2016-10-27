@@ -13,6 +13,13 @@ class IndexController < ApplicationController
     }
   end
 
+  def plans
+    @component_name = 'PlanPage'
+    @component_data = {
+      current: params[:current] || 'rails',
+    }
+  end
+
   def about
     @component_name = 'AboutPage'
     @component_data = {
