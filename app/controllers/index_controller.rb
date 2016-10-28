@@ -7,9 +7,9 @@ class IndexController < ApplicationController
   end
 
   def packages
-    @component_name = 'IntroPage'
+    @component_name = 'PackagesPage'
     @component_data = {
-      current: params[:current] || 'rails',
+      current: params[:current] || 'packages',
     }
   end
 

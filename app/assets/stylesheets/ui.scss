@@ -1,5 +1,10 @@
 $content-width: 1200px;
 
+@font-face {
+  font-family: hanhei;
+  src: url('/HanHei-SC-text.woff') format('woff');
+}
+
 .app-layout {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
@@ -7,7 +12,8 @@ $content-width: 1200px;
   overflow-x: hidden;
   background-color: #F5F5F5;
 
-  font-family: '微软雅黑';
+  // font-family: '微软雅黑';
+  font-family: hanhei;
   color: #333;
 }
 
@@ -17,6 +23,7 @@ $content-width: 1200px;
 
   padding: 1rem 1.5rem;
   line-height: $lh;
+  border-bottom: solid 1px #eee;
 
   .header-inner {
     margin:0 auto;
@@ -110,7 +117,7 @@ $content-width: 1200px;
           font-family: Monaco,'Courier New', monospace, consolas;
         }
         .desc span {
-          font-family: '微软雅黑';
+          font-family: hanhei;
         }
 
         button {
@@ -121,6 +128,19 @@ $content-width: 1200px;
     }
 
     li button:before {font-size: 30px;}
+  }
+
+  .packages {
+    padding: 2rem 0;
+    background-color: #FFF;
+    border-top: solid 1px #eee;
+
+    .inner {
+      max-width: $content-width;
+      margin: 0 auto;
+      padding: 0 1rem;
+      overflow: hidden;
+    }
   }
 
   .works {
@@ -242,125 +262,31 @@ $content-width: 1200px;
   }
 }
 
-// .page-index {
-//   background-color: #FFF;
-//   overflow-x: hidden;
-//   .pages{
-//     background: transparent;
-//     width: auto;
-//     margin: 0;
-//     border-radius: 0;
-//     padding: 0;
-//     overflow: unset;
-//     display: inline;
-//     min-height: 600px;
-//   }
-//   .page{
-//     min-height: 700px;
-//   }
-//   #page-1{
-//     background: url("http://i.teamkn.com/i/gOaMf1av.jpg") no-repeat 50%/cover;
-//     .text-wrapper{
-//       margin: 0;
-//       padding: 20px;
-//       background-color: rgba(0,0,0,0.6);
-//       position: absolute;
-//       left: 15%;
-//       top: 33%;
-//       color: #fff;
-//       text-align: right;
-//       font-family: Lato,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif;
+.main-wrapper {
+  background-color: #FFF;
+  margin-top: 1rem;
+  border-top: solid 1px #eee;
+  .wrapper {
+    max-width: $content-width;
+    margin: 0 auto;
+    min-height: 500px;
+  }
 
-//       h2{
-//         font-size: 40px;
-//         font-weight: 400;
-//         font-family: Raleway,Hiragino Sans GB;
-//         color: #FFF;
-//       }
-//     }
-//   }
+  .page-intro {
+    .menus {
+      min-height: 500px;
+      border-right: solid 1px #e9e9e9;
+      padding-top: 1.5rem;
+      ul {
+        border-right: 0 none;
+        li {
+          text-align: right;
+        }
+      }
+    }
 
-//   .image-wrapper{
-//     width: 65%;
-//     position: relative;
-//     top: 10%;
-//     /*margin-top: -256px;*/
-//     margin-top: 10%;
-//   }
-
-//   .text-wrapper{
-//     width: 35%;
-//     position: relative;
-//     font-family: Lato,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif;
-//     top: 20%;
-//     margin-top: 20%;
-//     h2{
-//       font-size: 32px;
-//       color: #666;
-//       font-weight: 400;
-//     }
-//     p{
-//       margin: 10px 0 20px;
-//       font-size: 16px;
-//       line-height: 28px;
-//       color: #999;
-//     }
-//     button{
-//       i{
-//         margin-left: .5em;
-//       }
-//     }
-//   }
-
-//   .image-wrapper-odd{
-//     float: right;
-//     background: url(https://t.alipayobjects.com/images/T1r5RkXotXXXXXXXXX.png) no-repeat 0/800px;
-//     height: 474px;
-//     top: 50%;
-//     /*margin-top: -266px;*/
-//   }
-
-//   .image-wrapper-even{
-//     float: left;
-//     background: url(https://t.alipayobjects.com/images/T1Ch8kXfpdXXXXXXXX.png) no-repeat 100%/841px;
-//     height: 511px;
-//   }
-
-//   .text-wrapper-odd{
-//     float: left;
-//     left: 10px;
-//     padding-left: 10%;
-//   }
-
-//   .text-wrapper-even{
-//     float: right;
-//     left: 10px;
-//   }
-
-//   .text-wrapper-bottom{
-//     text-align: center;
-//     margin: 10% auto 40px;
-//     h2{
-//       font-size: 32px;
-//       color: #666;
-//       font-weight: 400;
-//     }
-//     p{
-//       margin: 20px auto;
-//       font-size: 16px;
-//       line-height: 28px;
-//       color: #999;
-//     }
-//     button{
-//       i{
-//         margin-left: .5em;
-//       }
-//     }
-//   }
-
-//   .image-wrapper-bottom{
-//     background: url(http://i.teamkn.com/i/wcuduOf6.png) no-repeat 50%/615px;
-//     height: 364px;
-//     margin: auto;
-//   }
-// }
+    .content {
+      padding: 1.5rem;
+    }
+  }
+}

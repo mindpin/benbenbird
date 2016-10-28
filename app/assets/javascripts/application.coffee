@@ -17,5 +17,6 @@ window.Footer = require 'react/basic/Footer'
 
 # components
 register require 'app/page/Index'
-register require 'app/page/Intro'
+register require 'app/page/PlanPage'
 register require 'app/page/About'
+register require 'app/page/PackagesPage'

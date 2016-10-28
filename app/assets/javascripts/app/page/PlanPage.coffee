@@ -1,12 +1,12 @@
 { Menu, Row, Col } = antd
 
-module.exports = AboutPage = React.createClass
+module.exports = PlanPage = React.createClass
   getDefaultProps: ->
     courses:
-      us: "关于我们"
-      teaching_philosophy: "教学理念"
-      contact: "联系方式"
-      members: "成员简介"
+      rails: "Ruby on Rails"
+      wechat_app: "Wechat Native App"
+      react_jquery: "ReactJs & jQuery"
+      react_native: "ReactNative"
 
   render: ->
     <div className="main-wrapper">
@@ -62,21 +62,21 @@ Content = React.createClass
     <div className="content">
       {
         switch @props.current
-          when "teaching_philosophy"
+          when "wechat_app"
             <div>
-              <h1>教学理念</h1>
+              <h1>微信小程序</h1>
             </div>
-          when "contact"
+          when "react_jquery"
             <div>
-              <h1>联系方式</h1>
+              <h1>React JS & jQuery 前端开发</h1>
             </div>
-          when "members"
+          when "react_native"
             <div>
-              <h1>成员简介</h1>
+              <h1>React Native 移动应用开发</h1>
             </div>
           else
             <div>
-              <h1>关于我们</h1>
+              <h1>Rails Web 开发</h1>
             </div>
       }
     </div>

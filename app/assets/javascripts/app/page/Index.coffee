@@ -4,8 +4,20 @@ module.exports = IndexPage = React.createClass
   render: ->
     <div className='page-index'>
       <Welcome />
+      <Packages />
       <Plans />
       <Works />
+    </div>
+
+Packages = React.createClass
+  render: ->
+    <div className='packages'>
+      <div className='inner'>
+        <SegmentTitle
+          title='轻度课程包'
+          desc='学习资料和答疑服务'
+        />
+      </div>
     </div>
 
 Welcome = React.createClass
@@ -96,7 +108,7 @@ Plans = React.createClass
       <div className='inner'>
         <SegmentTitle
           title='专项计划'
-          desc='系统的专项训练计划'
+          desc='专项训练计划'
         />
         <div className='list'>
         {
