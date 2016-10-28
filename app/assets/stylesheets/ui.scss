@@ -11,6 +11,7 @@ $content-width: 1200px;
   overflow-y: scroll;
   overflow-x: hidden;
   background-color: #F5F5F5;
+  font-size: 16px;
 
   // font-family: '微软雅黑';
   font-family: hanhei;
@@ -48,6 +49,7 @@ $content-width: 1200px;
       float: right;
       .ant-menu {
         line-height: $lh;
+        font-size: 18px;
       }
     }
   }
@@ -140,6 +142,21 @@ $content-width: 1200px;
       margin: 0 auto;
       padding: 0 1rem;
       overflow: hidden;
+
+      .icons {
+        overflow: hidden;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+      }
+      .icons .pack-icon {
+        width: 64px;
+        height: 64px;
+        float: left;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+      }
     }
   }
 
