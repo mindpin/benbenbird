@@ -16,7 +16,7 @@ Packages = React.createClass
       "ruby.png", "drag-drop.png", "yarn.png", "fontawesome2.png", 
       "mockup.png", "programming.png", "email.png", "http.png", 
       "rails.png", "angular.png", "domain.png", "codepen.png", 
-      "d3js.png", "canvas.png", "map-icon.png", "git.png", 
+      "d3js.png", "canvas.png", "git.png", 
       "redis.png", "sidekiq.png", "nodejs.png", "xunfei.png", 
       "alipay.png", "jekyll.png", "cucumber.png", "markdown.png", 
       "image.png", "elastic.png", "npm.png", "react.png", "sublime.png", 
