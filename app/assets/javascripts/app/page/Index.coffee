@@ -75,7 +75,9 @@ Welcome = React.createClass
                 }
                 </div>
                 <Button size='large' type='primary'>
+                  <a href="/plans?current=#{x.key}">
                   <Icon type='arrow-right' /> 打开课程计划
+                  </a>
                 </Button>
               </div>
             </div>
@@ -89,18 +91,22 @@ Plans = React.createClass
       {
         img: 'http://i.teamkn.com/i/zA0v6MCk.png'
         title: 'Ruby on Rails'
+        key: 'rails'
       }
       {
         img: 'http://i.teamkn.com/i/JuWfo56P.png'
         title: 'Wechat Native App'
+        key: 'wechat_app'
       }
       {
         img: 'http://i.teamkn.com/i/z9IZR19b.png'
         title: 'ReactJs & jQuery'
+        key: 'react_jquery'
       }
       {
         img: 'http://i.teamkn.com/i/s9wKrSRO.jpg'
         title: 'ReactNative'
+        key: 'react_native'
       }
     ]
 
@@ -121,10 +127,10 @@ Plans = React.createClass
 
 Plan = React.createClass
   render: ->
-    <div className='plan'>
+    <a className='plan' href="/plans?current=#{@props.plan.key}">
       <div className='icon' style={backgroundImage: "url(#{@props.plan.img})"} />
       <div className='title'>{@props.plan.title}</div>
-    </div>
+    </a>
 
 
 Works = React.createClass

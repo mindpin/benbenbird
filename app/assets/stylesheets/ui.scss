@@ -225,7 +225,7 @@ $content-width: 1200px;
         border-left: solid 1px #eee;
         overflow: hidden;
       }
-      .plan {
+      a.plan {
         float: left;
         width: percentage(1/4);
         height: 10.5rem;
@@ -233,6 +233,10 @@ $content-width: 1200px;
         border-left: 0 none;
         padding-top: 2rem;
         background-color: #FFF;
+        color: #333;
+        &:hover {
+          background-color: lighten(#2DB7F5, 40%);
+        }
 
         .icon {
           width: 64px; height: 64px;
@@ -243,6 +247,7 @@ $content-width: 1200px;
         .title {
           text-align: center;
           margin-top: 1rem;
+          font-size: 16px;
         }
       }
     }

@@ -72,7 +72,7 @@ Content = React.createClass
         switch @props.current
           when "packages"
             <div>
-              <h1>课程包</h1>
+              <h1 style={marginBottom: '2rem'}>课程包</h1>
               <p style={marginBottom: '1rem'}>
                 我们准备了许多种适合初学者的课程包，在每个课程包的学习过程中，我们可以提供以下帮助：
               </p>
