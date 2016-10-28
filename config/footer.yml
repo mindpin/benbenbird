@@ -2,9 +2,12 @@ footer:
   links:
     - content:  "关于我们"
       url:      "/about"
+
     - content:  "教学理念"
       url:      "/about?current=teaching_philosophy"
+
     - content:  "联系方式"
       url:      "/about?current=contact"
+      
     - content:  "成员简介"
       url:      "/about?current=members"

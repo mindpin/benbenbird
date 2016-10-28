@@ -7,4 +7,5 @@ module.exports = AppLayout = React.createClass
     <div className='app-layout'>
       <Header menus={@props.menus} />
       <YieldComponent component={window.content_component} />
+      <Footer links={@props.footer_links} />
     </div>
