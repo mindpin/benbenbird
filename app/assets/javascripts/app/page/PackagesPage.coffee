@@ -56,12 +56,37 @@ MenuLink = React.createClass
 
 Content = React.createClass
   render: ->
+    imgs = [
+      'http://i.teamkn.com/i/b8Qw30yd.png'
+      'http://i.teamkn.com/i/Z2k6kIHM.png'
+      'http://i.teamkn.com/i/fB0NTZHR.png'
+      'http://i.teamkn.com/i/kSSP9eSV.png'
+      'http://i.teamkn.com/i/mX2QmDKv.png'
+      'http://i.teamkn.com/i/RiQNkCwv.png'
+    ]
+
+    { Icon } = antd
+
     <div className="content">
       {
         switch @props.current
           when "packages"
             <div>
               <h1>课程包</h1>
+              <p style={marginBottom: '1rem'}>
+                我们准备了许多种适合初学者的课程包，在每个课程包的学习过程中，我们可以提供以下帮助：
+              </p>
+              <ul style={marginBottom: '1.5rem'}>
+                <li><Icon type='arrow-right' /> 提供全部的必要学习资料</li>
+                <li><Icon type='arrow-right' /> 帮助搭建开发实验环境</li>
+                <li><Icon type='arrow-right' /> 设计实践作业</li>
+                <li><Icon type='arrow-right' /> 提供邮件，语音，聊天答疑</li>
+                <li><Icon type='arrow-right' /> 进行 Code Review</li>
+              </ul>
+              {
+                imgs.map (i, idx)->
+                  <img src={i} key={idx} style={maxWidth: '100%'} />
+              }
             </div>
       }
     </div>
